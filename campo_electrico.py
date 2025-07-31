@@ -58,6 +58,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+st.markdown("<br>", unsafe_allow_html=True)
 
 # Dividir en dos columnas: izquierda (plot), derecha (controles)
 col1, col2 = st.columns([2, 1])  # Ancho relativo: 2/3 para gráfico, 1/3 para controles

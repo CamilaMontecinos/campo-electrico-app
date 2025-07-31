@@ -39,7 +39,7 @@ st.title("Fuerza eléctrica entre cargas puntuales")
 
 st.markdown(
     """
-    <div style='font-weight:bold; margin-bottom: 10px;'>Leyenda:</div>
+    <div style='font-weight:bold; margin-bottom: 10px;'>¿Qué representa cada color?:</div>
     <div style='display: flex; align-items: center; gap: 20px;'>
         <div style='display: flex; align-items: center;'>
             <div style='width: 40px; height: 4px; background-color: blue; margin-right: 8px;'></div>

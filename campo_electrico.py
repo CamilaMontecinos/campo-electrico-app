@@ -37,6 +37,28 @@ def calcular_fuerzas_totales(xq, yq, q_vals):
 
 st.title("Fuerza eléctrica entre cargas puntuales")
 
+st.markdown(
+    """
+    <div style='font-weight:bold; margin-bottom: 10px;'>Leyenda:</div>
+    <div style='display: flex; align-items: center; gap: 20px;'>
+        <div style='display: flex; align-items: center;'>
+            <div style='width: 40px; height: 4px; background-color: blue; margin-right: 8px;'></div>
+            <span>Fuerza de repulsión</span>
+        </div>
+        <div style='display: flex; align-items: center;'>
+            <div style='width: 40px; height: 4px; background-color: red; margin-right: 8px;'></div>
+            <span>Fuerza de atracción</span>
+        </div>
+        <div style='display: flex; align-items: center;'>
+            <div style='width: 40px; height: 4px; background-color: green; margin-right: 8px;'></div>
+            <span>Fuerza resultante</span>
+        </div>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
+
 # Dividir en dos columnas: izquierda (plot), derecha (controles)
 col1, col2 = st.columns([2, 1])  # Ancho relativo: 2/3 para gráfico, 1/3 para controles
 

@@ -69,7 +69,7 @@ with col2:
 
     q_vals = []
     for i in range(4):
-        q = st.slider(f"Carga q{i+1} (μC)", -5.0, 5.0, [1.0, -1.0, 1.0, -1.0][i], 0.1)
+        q = st.slider(f"Carga q{i+1} (μC)", -2.0, 2.0, [1.0, -1.0, 1.0, -1.0][i], 0.1)
         q_vals.append(q)
 
 vectores, F_total = calcular_fuerzas_totales(xq, yq, q_vals)

@@ -8,12 +8,6 @@ import streamlit as st
 import numpy as np
 import matplotlib.pyplot as plt
 
-st.set_page_config(
-    page_title="Simulación: Fuerza eléctrica entre cargas puntuales",  # Título en la pestaña del navegador
-    page_icon="⚡",                            # Ícono (puede ser emoji o URL)
-    layout="wide"                             # Opcional: más espacio horizontal
-)
-
 
 # Constante de Coulomb
 k = 9e9  # Nm^2/C^2
@@ -62,7 +56,7 @@ with col1:
     ax.set_xlim(-2, 2)
     ax.set_ylim(-2, 2)
     ax.set_aspect('equal')
-    ax.set_title("Flechas de fuerza eléctrica")
+    ax.set_title("Fuerza eléctrica")
 
     # Dibuja cargas
     for i, r in enumerate(posiciones):
